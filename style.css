@@ -1,0 +1,44 @@
+#navigationPrimary {
+  margin-left: 14px; 
+}
+
+.pkp_site_name .is_img img {
+    margin-bottom: -40px;
+    position: relative;
+    top: -35px;
+    margin-left: -50px;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.pkp_site_nav_menu {
+        padding: 0 17px;
+}
+
+.pkp_site_name .is_img img:after {
+    content: "testefjk39qwjhf893whg89swenh 7f8v 9qw3gh978fvqmnhwfuiov3bnahsofive"
+}
+
+body {
+    background-image: url(https://github.com/caiohamamura/ciencia-evidencia/blob/main/fundo.png?raw=true);
+    background-size: cover;
+    background-position: right;
+    background-blend-mode: lighten;
+    background-color: #fff9;
+    margin: 0 85px;
+}
+
+.pkp_footer_content {
+    padding: 2.143rem;
+    text-align: left;
+    position: absolute;
+    top: -23px;
+}
+
+.pkp_navigation_primary_wrapper:before {
+    content: none !important;
+}
+
+    .has_site_logo .pkp_head_wrapper {
+        width: 100%;
+    }
