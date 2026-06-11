@@ -1,3 +1,7 @@
+.pkp_site_name_wrapper {
+    width: 100%;
+}
+
 #navigationPrimary {
   margin-left: 14px; 
 }
@@ -6,13 +10,16 @@
     margin-bottom: -40px;
     position: relative;
     top: -35px;
-    margin-left: -50px;
     min-width: 100px;
     min-height: 100px;
 }
 
 .pkp_site_nav_menu {
         padding: 0 17px;
+}
+
+.pkp_site_name {
+    height: 100%;
 }
 
 .pkp_site_name .is_img img:after {
@@ -33,6 +40,7 @@ body {
     text-align: left;
     position: absolute;
     top: -23px;
+    line-height: 1.8;
 }
 
 .pkp_navigation_primary_wrapper:before {
@@ -42,3 +50,41 @@ body {
     .has_site_logo .pkp_head_wrapper {
         width: 100%;
     }
+
+@media (max-width: 988px) {
+    .pkp_site_name_wrapper, .pkp_navigation_primary_wrapper, .pkp_navigation_user, .pkp_search_mobile, .pkp_structure_content, .pkp_structure_footer {
+        width: 100%;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+.pkp_navigation_user_wrapper {
+        position: absolute;
+        top: 0;
+        left: unset;
+        transform: none;
+        right:0;
+        padding-left: 0;
+        padding-right: 30px;
+        text-align: right;
+        padding-top: 0;
+        margin-top: 0;
+        border-top: none;
+        z-index: 1000;
+    }
+}
+
+
+#issn {
+    position: fixed;
+    top: 69px;
+    right: 116px;
+}
+
+#navigationUser {
+        position: absolute;
+    right: 0px;
+    margin-right: 30px;
+}
