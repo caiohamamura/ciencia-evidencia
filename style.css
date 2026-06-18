@@ -1,3 +1,12 @@
+#headerNavigationContainer {
+    background-size: contain;
+    background-position: right;
+}
+
+#navigationUser {
+    transform: translateX(-78px) translateY(105px);
+}
+
 .pkp_site_name_wrapper {
     width: 100%;
 }
@@ -54,6 +63,10 @@ body {
 @media (max-width: 988px) {
     .pkp_site_name_wrapper, .pkp_navigation_primary_wrapper, .pkp_navigation_user, .pkp_search_mobile, .pkp_structure_content, .pkp_structure_footer {
         width: 100%;
+    }
+    
+    #headerNavigationContainer {
+        background: none;
     }
 }
 
