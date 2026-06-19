@@ -1,103 +1,111 @@
+/* ============================================================================
+   HEADER & NAVIGATION
+   ============================================================================ */
+
 #headerNavigationContainer {
     background-size: contain;
     background-position: right;
 }
 
-#navigationUser {
-    transform: translateX(-78px) translateY(105px);
+@media (max-width: 988px) {
+    #headerNavigationContainer {
+        background: none;
+    }
 }
 
 .pkp_site_name_wrapper {
     width: 100%;
 }
 
-#navigationPrimary {
-  margin-left: 14px; 
-}
-
-.pkp_site_name .is_img img {
-    margin-bottom: -40px;
-    position: relative;
-    top: -35px;
-    min-width: 100px;
-    min-height: 100px;
-}
-
-.pkp_site_nav_menu {
-        padding: 0 17px;
-}
-
 .pkp_site_name {
     height: 100%;
 }
 
-.pkp_site_name .is_img img:after {
-    content: "testefjk39qwjhf893whg89swenh 7f8v 9qw3gh978fvqmnhwfuiov3bnahsofive"
+.pkp_site_name .is_img img {
+    min-width: 100px;
+    min-height: 100px;
+    margin-bottom: -10px;
+    position: relative;
+    top: -5px;
 }
 
-body {
-    background-image: url(https://github.com/caiohamamura/ciencia-evidencia/blob/main/fundo.png?raw=true);
-    background-size: cover;
-    background-position: right;
-    background-blend-mode: lighten;
-    background-color: #fff9;
-    margin: 0 85px;
+#navigationPrimary {
+    margin-left: 14px;
 }
 
-.pkp_footer_content {
-    padding: 2.143rem;
-    text-align: left;
-    position: absolute;
-    top: -23px;
-    line-height: 1.8;
+.pkp_site_nav_menu {
+    padding: 0 17px;
 }
 
 .pkp_navigation_primary_wrapper:before {
     content: none !important;
 }
 
-    .has_site_logo .pkp_head_wrapper {
-        width: 100%;
-    }
-
-@media (max-width: 988px) {
-    .pkp_site_name_wrapper, .pkp_navigation_primary_wrapper, .pkp_navigation_user, .pkp_search_mobile, .pkp_structure_content, .pkp_structure_footer {
-        width: 100%;
-    }
-    
-    #headerNavigationContainer {
-        background: none;
-    }
+.has_site_logo .pkp_head_wrapper {
+    width: 100%;
 }
 
-
-
-@media (min-width: 992px) {
-.pkp_navigation_user_wrapper {
-        position: absolute;
-        top: 0;
-        left: unset;
-        transform: none;
-        right:0;
-        padding-left: 0;
-        padding-right: 30px;
-        text-align: right;
-        padding-top: 0;
-        margin-top: 0;
-        border-top: none;
-        z-index: 1000;
-    }
-}
-
-
-#issn {
-    position: fixed;
-    top: 69px;
-    right: 116px;
-}
+/* ============================================================================
+   USER NAVIGATION
+   ============================================================================ */
 
 #navigationUser {
-        position: absolute;
-    right: 0px;
+    position: absolute;
+    right: 0;
     margin-right: 30px;
+    transform: translateX(-78px) translateY(105px);
+}
+
+@media (min-width: 992px) {
+    .pkp_navigation_user_wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: unset;
+        z-index: 1000;
+        padding: 0 30px 0 0;
+        margin-top: 0;
+        text-align: right;
+        border-top: none;
+    }
+}
+
+/* ============================================================================
+   FOOTER
+   ============================================================================ */
+
+.pkp_footer_content {
+    position: absolute;
+    top: -23px;
+    padding: 2.143rem;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* ============================================================================
+   BODY & BACKGROUND
+   ============================================================================ */
+
+body {
+    margin: 0 85px;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url(https://github.com/caiohamamura/ciencia-evidencia/blob/main/fundo.png?raw=true);
+    background-size: cover;
+    background-position: right;
+    background-blend-mode: lighten;
+}
+
+/* ============================================================================
+   RESPONSIVE
+   ============================================================================ */
+
+@media (max-width: 988px) {
+    .pkp_site_name_wrapper,
+    .pkp_navigation_primary_wrapper,
+    .pkp_navigation_user,
+    .pkp_search_mobile,
+    .pkp_structure_content,
+    .pkp_structure_footer {
+        width: 100%;
+    }
 }
